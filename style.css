@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: var(--veryDarkBlue);
+    font-size: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+#perfume {
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.description {
+    padding: 5%;
+    gap: 25px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    color: var(--darkGrayishBlue);
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#price {
+    text-decoration: line-through;
+}
+
+#new-price {
+    font-family: 'Fraunces', serif;
+    color: var(--darkCyan);
+    font-size: 2.5rem; 
+}
+
+.price {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+button {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 8% 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--darkCyan);
+    color: var(--white);
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--veryDarkBlue);
+    transition: 1s;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
